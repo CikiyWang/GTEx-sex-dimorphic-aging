@@ -20,12 +20,7 @@ Calculation of PCA and PCA-based Signal-to-Variation Ratio (pcSVR) to evaluate t
 **3_Differential_analysis**
 sex-/age-differential analysis and sex-stratified differential analysis
 
-**4_Time_series_and_Breakpoint_analysis**
-Identification of chronological genes and AS events during aging
-Calculation breakpoints during aging
-Identification of Aging-determiant Genes (ADGs) which can significantly alter the aging breakpoints
-
-**5_AD_association**
+**4_AD_association**
 RandomForest classifier for predicting Alzheimer's Disease (AD) with feature selections procedure (RFE)
 Sex-stratified model:
   sBASEs in females predict female AD; sBASEs in males predicte male AD;
@@ -33,9 +28,15 @@ Control model:
   Sex-stratified model by randomly selected AS events
   Merge-sexes model: sBASEs in females/males predict AD
 
-**6_SFs_RNA_Network_Construction**
+**5_SFs_RNA_Network_Construction**
 Construction the regulatory networks between splicing factors (SFs) and AS events
 Step1: Spearman's correlation between SFs expression (TPM) and AS events (PSI) < 0.05
 Step2: Significant regulation by SF Knockdown (shRNA-seq from ENCODE)
 Step3: Existence of the SFs motif signals in the adjacent region (+/-300nt) of splice sites
 Integration code
+
+**6_Time_series_and_Breakpoint_analysis**
+Identification of chronological genes and AS events during aging
+Calculation breakpoints during aging
+Identification of Aging-determiant Genes (ADGs) which can significantly alter the aging breakpoints
+
