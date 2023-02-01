@@ -4,8 +4,8 @@ the source code of GTEx sex dimorphic aging project
 
 R version 4.0.4 (2021-02-15)
 
-Reequired R packages:
-R packages: 
+Reequired R packages:\n
+R packages: \n
 'impute=1.64.0'
 'parallel=4.0.4'
 'dplyr=1.2.2'
