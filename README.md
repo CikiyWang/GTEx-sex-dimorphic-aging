@@ -53,7 +53,7 @@ Step1: Spearman's correlation between SFs expression (TPM) and AS events (PSI) <
 Step2: Significant regulation by SF Knockdown (shRNA-seq from ENCODE)
 Step3: Existence of the SFs motif signals in the adjacent region (+/-300nt) of splice sites
 Integration code
-# Step1: Step1_correlation_SFs_and_AS_evnets.R: input GE and AS data matrix; output spearman's rho and p-value;
+	# Step1: Step1_correlation_SFs_and_AS_evnets.R: input GE and AS data matrix; output spearman's rho and p-value;
 	# Step2: Step2_diff_shRBP_AS_events_ENCODE.R: input PSI matrix of shRNA-seq; output: differential AS events between control and RBP knockdown;
 	# Step3: Step3_motif_identification_make_seqs_for_deepbind.R: input list of AS events and genome annotation; output the subsequences (sliding window=40nt) in the range from upstream to downstream 300nt of each AS event to run deepbind;
 	# integration of the results from the 3 steps above:  integration_networks_of_3_steps.R 
