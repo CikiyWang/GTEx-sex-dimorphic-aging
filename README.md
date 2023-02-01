@@ -4,8 +4,8 @@ the source code of GTEx sex dimorphic aging project
 
 R version 4.0.4 (2021-02-15)
 
-#### Required R packages:
-	**R packages:**
+### Required R packages:
+#### R packages:
 	'impute=1.64.0';
 	'parallel=4.0.4'
 	'dplyr=1.2.2'
@@ -21,11 +21,11 @@ R version 4.0.4 (2021-02-15)
 	'clusterProfiler=3.18.1'
 	'DOSE=3.16.0'.
 
-#### Usage: 
+### Usage: 
 	Rscript *.R or in RStudio
 
 
-### Data preprocessing:
+## Data preprocessing:
 **Processing the quantification of gene expression (GE) and alternative splicing (AS) as judged by Paean**
 
 >**Gene expression:**  
@@ -43,14 +43,14 @@ R version 4.0.4 (2021-02-15)
 **output:** processed data matrix  
 
 
-### PCA and pcSVR calculation
+## PCA and pcSVR calculation:
 **Calculation of PCA and PCA-based Signal-to-Variation Ratio (pcSVR) to evaluate the contributions to global transcriptomic variations**
 
 >**input:** GE/AS matrix and phenotype file (sex, age, etc.)  
 **output:** print pcSVR value and corresponding empirical p-value  
  
 
-### Differential analysis
+## Differential analysis:
 **sex-/age-differential analysis and sex-stratified differential analysis**
 
 >**input:** GE/AS matrix and phenotype file (sex, age, etc.)  
@@ -62,7 +62,7 @@ pval_age_class2:Middle, pval_age_class3:Old, pval_SEX2:age_class2:Middle, pval_S
 fc_TPM_sex, fc_TPM_age_old, symbol
 
 
-### AD association analysis
+## AD association analysis:
 **RandomForest classifier for predicting Alzheimer's Disease (AD) with feature selections procedure (RFE)**
 
 >**Sex-stratified model:**  
@@ -76,7 +76,7 @@ fc_TPM_sex, fc_TPM_age_old, symbol
 **output:** Performance of AD prediction in 100 iterations  
 
 
-### SFs-AS events Network
+## SFs-AS events Network:
 **Construction the regulatory networks between splicing factors (SFs) and AS events**
 
 >**Step1:** Spearman's correlation between SFs expression (TPM) and AS events (PSI) < 0.05  
@@ -99,7 +99,7 @@ fc_TPM_sex, fc_TPM_age_old, symbol
 >>integration_networks_of_3_steps.R  
 
 
-### Time series and Breakpoint analysis
+## Time series and Breakpoint analysis:
 **Identification of chronological genes and AS events during aging**  
 **Calculation breakpoints during aging**  
 **Identification of Aging-determiant Genes (ADGs) which can significantly alter the aging breakpoints**  
