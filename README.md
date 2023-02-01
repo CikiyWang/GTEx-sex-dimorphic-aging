@@ -32,12 +32,12 @@ R version 4.0.4 (2021-02-15)
 >>TPM > 1 and protein coding genes  
 
 >**Alternative splicing:**  
->>(1) averaged total reads counts in spliced junctions (i.e., spliced in counts + spliced out counts) > 10  
-  (2) non-constant PSI values across samples  
-  (3) max(PSI) – min(PSI) > 0.05  
-  (4) standard deviation > 0.01  
-  (5) averaged PSI value in the range from 0.05 to 0.95  
-  (6) TPM of the spliced genes >1  
+>>**(1)** averaged total reads counts in spliced junctions (i.e., spliced in counts + spliced out counts) > 10  
+  **(2)** non-constant PSI values across samples  
+  **(3)** max(PSI) – min(PSI) > 0.05  
+  **(4)** standard deviation > 0.01  
+  **(5)** averaged PSI value in the range from 0.05 to 0.95  
+  **(6)** TPM of the spliced genes >1  
 
 >**input:** data matrix with genes/AS events in rows and sample name in columns  
 **output:** processed data matrix  
@@ -104,8 +104,8 @@ fc_TPM_sex, fc_TPM_age_old, symbol
 **Calculation breakpoints during aging**  
 **Identification of Aging-determiant Genes (ADGs) which can significantly alter the aging breakpoints**  
 
->Time_series_analysis_for_chronological.R: 
+>**Time_series_analysis_for_chronological.R:** 
 >>input GE/AS matrix; output chronological GE/AS during aging.  
 
->breakpoint_analysis_subsampled_genes_for_ADGs.R: 
+>**breakpoint_analysis_subsampled_genes_for_ADGs.R:** 
 >>input hronological GE/AS during aging; output breakpoint and fitted TPM/PSI values.  
