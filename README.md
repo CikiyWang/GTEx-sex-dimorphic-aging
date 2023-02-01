@@ -3,9 +3,24 @@
 the source code of GTEx sex dimorphic aging project
 
 R version 4.0.4 (2021-02-15)
+
 Reequired R packages:
-R packages: 'impute=1.64.0', 'parallel=4.0.4', 'dplyr=1.2.2', 'limma=3.46.0', ""edgeR=3.32.1, 'sva=3.38.0', 'caret=6.0-93', 'caTools=1.18.2', 'zoo=1.8-10', 'forecast=8.16'.
-Functional enrichment analysis was performed by R packages 'msigdbr=7.5.1', 'clusterProfiler=3.18.1', and 'DOSE=3.16.0'.
+R packages: 
+'impute=1.64.0'
+'parallel=4.0.4'
+'dplyr=1.2.2'
+'limma=3.46.0'
+'edgeR=3.32.1'
+'sva=3.38.0'
+'caret=6.0-93'
+'caTools=1.18.2'
+'zoo=1.8-10'
+'forecast=8.16'
+
+Functional enrichment analysis was performed by R packages 
+'msigdbr=7.5.1'
+'clusterProfiler=3.18.1'
+'DOSE=3.16.0'.
 
 Usage: Rscript *.R or in RStudio
 
